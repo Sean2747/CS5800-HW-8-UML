@@ -1,0 +1,153 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object Document {
+    characters : List<Character>
+    propertiesFactory : CharacterPropertiesFactory
+}
+
+object CharacterProperties_Calibri99 {
+    font = "Calibri"
+    color = "Blue"
+    size = 99
+}
+
+object CharacterProperties_Arial16 {
+    font = "Arial"
+    color = "Black"
+    size = 16
+}
+
+object CharacterProperties_Arial14 {
+    font = "Arial"
+    color = "Black"
+    size = 14
+}
+
+object CharacterProperties_Verdana18 {
+    font = "Verdana"
+    color = "Blue"
+    size = 18
+}
+
+object CharacterProperties_Verdana12 {
+    font = "Verdana"
+    color = "Red"
+    size = 12
+}
+
+object Character1 {
+    character = 'H'
+    characterProperty : CharacterProperties_Calibri99
+}
+
+object Character2 {
+    character = 'e'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character3 {
+    character = 'l'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character4 {
+    character = 'l'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character5 {
+    character = 'o'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character6 {
+    character = 'W'
+    characterProperty : CharacterProperties_Calibri99
+}
+
+object Character7 {
+    character = 'o'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character8 {
+    character = 'r'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character9 {
+    character = 'l'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character10 {
+    character = 'd'
+    characterProperty : CharacterProperties_Arial14
+}
+
+object Character11 {
+    character = 'C'
+    characterProperty : CharacterProperties_Verdana18
+}
+
+object Character12 {
+    character = 'S'
+    characterProperty : CharacterProperties_Verdana18
+}
+
+object Character13 {
+    character = '5'
+    characterProperty : CharacterProperties_Verdana12
+}
+
+object Character14 {
+    character = '8'
+    characterProperty : CharacterProperties_Verdana12
+}
+
+object Character15 {
+    character = '0'
+    characterProperty : CharacterProperties_Verdana12
+}
+
+object Character16 {
+    character = '0'
+    characterProperty : CharacterProperties_Verdana12
+}
+
+Document *--> Character1
+Document *--> Character2
+Document *--> Character3
+Document *--> Character4
+Document *--> Character5
+Document *--> Character6
+Document *--> Character7
+Document *--> Character8
+Document *--> Character9
+Document *--> Character10
+Document *--> Character11
+Document *--> Character12
+Document *--> Character13
+Document *--> Character14
+Document *--> Character15
+Document *--> Character16
+
+Character1 --> CharacterProperties_Calibri99
+Character6 --> CharacterProperties_Calibri99
+Character2 --> CharacterProperties_Arial14
+Character3 --> CharacterProperties_Arial14
+Character4 --> CharacterProperties_Arial14
+Character5 --> CharacterProperties_Arial14
+Character7 --> CharacterProperties_Arial14
+Character8 --> CharacterProperties_Arial14
+Character9 --> CharacterProperties_Arial14
+Character10 --> CharacterProperties_Arial14
+Character11 --> CharacterProperties_Verdana18
+Character12 --> CharacterProperties_Verdana18
+Character13 --> CharacterProperties_Verdana12
+Character14 --> CharacterProperties_Verdana12
+Character15 --> CharacterProperties_Verdana12
+Character16 --> CharacterProperties_Verdana12
+
+@enduml
